@@ -205,12 +205,23 @@
     </div>
   </div>
 
-  <div class="section-label">يرجى اختيار المقاس المناسب</div>
-  <div class="sizes">
-    <button class="size-btn active" onclick="selectSize(this)"><span class="size-label">M+S</span></button>
-    <button class="size-btn" onclick="selectSize(this)"><span class="size-label">L+XL</span></button>
-    <button class="size-btn" onclick="selectSize(this)"><span class="size-label">XXL</span></button>
-  </div>
+<div class="section-label">يرجى اختيار المقاس المناسب</div>
+<div class="sizes">
+  <button class="size-btn active" onclick="selectSize(this)">
+    <span class="size-label">M+S</span>
+    <span class="weight-label">أقل من 65 كغ</span>
+  </button>
+  
+  <button class="size-btn" onclick="selectSize(this)">
+    <span class="size-label">L+XL</span>
+    <span class="weight-label">65 كغ إلى 85 كغ</span>
+  </button>
+  
+  <button class="size-btn" onclick="selectSize(this)">
+    <span class="size-label">XXL</span>
+    <span class="weight-label">85 كغ إلى 95 كغ</span>
+  </button>
+</div>
 
   <div class="section-label">الكمية المطلوبة</div>
   <div class="quantity-section">
@@ -313,7 +324,7 @@
     </div>
     <div class="company-text">توصيلنا سريع ومضمون مع شركة</div>
     <div class="company-box">
-      <a href="Bureau ZR.html" target="_blank"><img src="ZR Black logo.svg" alt="شريك التوصيل" style="cursor:pointer;"></a>
+      <a href="Tawssil.html" target="_blank"><img src="ZR Black logo.svg" alt="شريك التوصيل" style="cursor:pointer;"></a>
     </div>
   </div>
 </main>
@@ -540,7 +551,7 @@
       nomComplet: fullName,
       telephone1: formatPhone(phone),
       telephone2: altPhone ? formatPhone(altPhone) : '',
-      produit: `TROIS = ${size} - (${qty})`,
+      produit: `TRios = ${size} - (${qty})`,
       quantite: 1,
       adresse: method === 'home' ? adresse : '',
       wilaya: wilayaNamesFr[parseInt(wilayaIndex)] || wilayaText,
